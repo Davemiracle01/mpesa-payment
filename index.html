@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>M-Pesa Payment</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    .container {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 16px;
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+    input, button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 12px;
+      border-radius: 8px;
+      border: none;
+      font-size: 1rem;
+    }
+    input {
+      background: white;
+      color: black;
+    }
+    button {
+      background-color: #00e676;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: #00c853;
+    }
+    .footer {
+      font-size: 0.85rem;
+      margin-top: 20px;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Pay with M-Pesa</h1>
+    <form onsubmit="makePayment(event)">
+      <input type="text" id="phone" placeholder="Enter Safaricom Number" required />
+      <input type="number" id="amount" placeholder="Enter Amount" required />
+      <button type="submit">Pay</button>
+    </form>
+    <div class="footer">
+      Powered by Kendal | <a href="https://wa.me/254769279076" style="color:white; text-decoration:underline;">Contact</a>
+    </div>
+  </div>
+
+  <script>
+    async function makePayment(e) {
+      e.preventDefault();
+      const phone = document.getElementById('phone').value;
+      const amount = document.getElementById('amount').value;
+      const res = await fetch('https://your-backend.onrender.com/pay', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({ phone, amount })
+      });
+      const data = await res.json();
+      alert(data.message || 'STK Push sent!');
+    }
+  </script>
+</body>
+</html>
