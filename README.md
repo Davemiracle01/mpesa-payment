@@ -32,9 +32,7 @@ CONSUMER_SECRET=...
 PASSKEY=...
 CALLBACK_URL=https://your-backend-url/callback
 
-yaml
-Copy
-Edit
+
 
 2. Deploy:
 - Frontend on Netlify (from `frontend/`)
@@ -44,11 +42,9 @@ Edit
 
 ## 🙋‍♂️ Made by
 
-**Dave @ CyberWeebs**  
-📞 [Chat on WhatsApp](https://wa.me/254769279076)  
+**Dave**  
+📞 [Chat on WhatsApp](https://wa.me/254799073754)  
 📢 [Join Channel](https://whatsapp.com/channel/0029VavpWUvGk1Fkbzz0vz0v)  
 💰 [Donate or Buy Bot](https://selar.com/w61562)
 
 ---
-
-> 🔐 Don’t upload your `.env` file to GitHub.
