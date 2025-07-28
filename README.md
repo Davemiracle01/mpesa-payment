@@ -43,7 +43,7 @@ CALLBACK_URL=https://your-backend-url/callback
 ## 🙋‍♂️ Made by
 
 **Dave**  
-📞 [Chat on WhatsApp](https://wa.me/254799073754)  
+📞 [Chat on WhatsApp](https://wa.me/254799073744)  
 📢 [Join Channel](https://whatsapp.com/channel/0029VavpWUvGk1Fkbzz0vz0v)  
 💰 [Donate or Buy Bot](https://selar.com/w61562)
 
