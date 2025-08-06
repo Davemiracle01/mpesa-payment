@@ -7,7 +7,7 @@ A simple web app for sending **M-Pesa STK Push** payment requests using the Safa
 ## 🚀 Live URLs
 
 - 🌐 Frontend (Netlify): https://mpesa-payment.netlify.app/  
-- ⚙️ Backend (Render): https://your-api.onrender.com/stkpush (failed because of a missing passkey) 
+- ⚙️ Backend (Render): https://mpesa-payment.onrender.com (🥲) 
 
 ---
 
